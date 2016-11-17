@@ -24,7 +24,7 @@ copyright  Copyright (C) 2016                              +
     & > .header {
       & .name {
         .text(normal);
-        font-weight: 600;
+        font-weight: normal;
         color: @text-color-highlight;
         height: @tab-height + 1px;
         line-height: @tab-height;
@@ -66,13 +66,15 @@ copyright  Copyright (C) 2016                              +
 .list-group .icon,
 .list-tree .icon {
   display: inline-block;
-  height: inherit;
+  height: 0px;
   &::before {
     top: initial;
     line-height: inherit;
-    height: inherit;
+    height: 0px;
     vertical-align: top;
   }
+  font-size: @font-size - 2px;
+  font-weight: normal;
 }
 
 .tree-view-resizer {
