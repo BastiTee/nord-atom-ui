@@ -5,6 +5,4 @@ ps -ef | grep $atom | grep -v grep | awk '{print $2}' | while read pid; do kill 
 apm unlink
 apm install
 apm link
-$atom -d 2>&1 > /dev/null & 
-echo
 
